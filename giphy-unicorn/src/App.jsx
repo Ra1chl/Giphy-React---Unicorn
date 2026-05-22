@@ -1,8 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./App.css";
+import Header from "./components/Header";
+import SearchContainer from "./components/SearchContainer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,7 +10,8 @@ function App() {
     <>
       <div className="App">
         <div className="main">
-          <h1>Giphy Unicorn</h1>
+          <Header />
+          <SearchContainer />
         </div>
       </div>
     </>
